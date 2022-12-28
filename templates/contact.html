@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DanilkaXs Workshop | Контакти</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+        form {
+            max-width: 420px;
+            margin: 50px auto;
+        }
+
+        .feedback-input {
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: transparent;
+            border: 2px solid #1047e3;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+        .feedback-input:focus {
+            border: 2px solid #0643d9;
+        }
+
+        textarea {
+            height: 150px;
+            line-height: 150%;
+            resize: vertical;
+        }
+
+        [type="submit"] {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            width: 100%;
+            background: #3967d9;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: all 0.3s;
+            margin-top: -4px;
+            font-weight: 700;
+        }
+
+        [type="submit"]:hover {
+            background: #0037bb;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">DanilkaXs Workshop | Контакти</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Головна</a></li>
+            <li class="nav-item"><a href="/services" class="nav-link ">Сервіси</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link active">Контакти</a></li>
+        </ul>
+    </header>
+</div>
+
+<form>
+    <input name="name" type="text" class="feedback-input" placeholder="Ім'я"/>
+    <input name="email" type="text" class="feedback-input" placeholder="Ваш еmail"/>
+    <textarea name="text" class="feedback-input" placeholder="Повідомлення"></textarea>
+    <input type="submit" value="Відправити"/>
+</form>
+
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Головна</a></li>
+            <li class="nav-item"><a href="/services" class="nav-link px-2 text-muted">Сервіси</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link px-2 text-muted">Контакти</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 DanilkaXs, Inc</p>
+    </footer>
+</div>
+</body>
+</html>

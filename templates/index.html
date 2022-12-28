@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DanilkaXs Workshop | Головна</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}"/>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">DanilkaXs Workshop | Головна</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Головна</a></li>
+            <li class="nav-item"><a href="/services" class="nav-link">Сервіси</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Контакти</a></li>
+        </ul>
+    </header>
+</div>
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='img/logo.png') }}" alt="" width="70"
+         height="70">
+    <h1 class="display-5 fw-bold">DanilkaXs Workshop</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Це місце де я розміщую свої сервіси для автоматизації офісної роботи викладача</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Про себе</h1>
+            <p class="lead">Люблю створювати щось нове для себе. Цікавлюсь програмуванням та оптимізацією
+                роботи. Моєю метою є облечшити усю діяльність, яка повязана з університетом</p>
+        </div>
+        <div class="col-lg-5 offset-lg-0 p-0 overflow-hidden shadow-lg">
+            <img style="border-radius: 10px" height="620" width="600"
+                 src="{{ url_for('static', filename='img/d.jpg') }}" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Сервіси</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            </div>
+            <h3 class="fs-2">Рейтинг студентів</h3>
+            <p>Сервіс для автоматичного створення шаблонів рейтинга студентів для легкого заповнення його оцінками.</p>
+            <a href="#" class="icon-link d-inline-flex align-items-center">
+                Перейти до сервісу >
+            </a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            </div>
+            <h3 class="fs-2">Екзамінаційні білети</h3>
+            <p>Сервіс для створення екзамінаційних білетів.</p>
+            <a href="#" class="icon-link d-inline-flex align-items-center">
+                Перейти до сервісу >
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Майбутні проекти</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <h3 class="fw-bold">Цікавеньке</h3>
+            <p class="text-muted">В майбутньому усі ці сервіси будуть працювати для облегчення роботи та початку
+                створення екосистеми додатків для керування закладом вищої освіти.</p>
+            <a href="#" class="btn btn-primary btn-lg">Долучитися до розробки ></a>
+        </div>
+
+        <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Електроний журнал</h4>
+                    <p class="text-muted">Сервіс для зберігання списка групи, дисциплін, оцінок для аналіз успішності та
+                        автоматизування іншої діяльності.</p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">База даних студентів</h4>
+                    <p class="text-muted">Сховище для зберігання даних та контролю актуальності інформації.</p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Помічник студента</h4>
+                    <p class="text-muted">Сервіс для надання студенту актуальної інформації та інформування щодо
+                        навчання. </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Помічник абітурієнта</h4>
+                    <p class="text-muted">Додаток або сервіс для надання абітурієнту інформації щодо спеціальностей,
+                        навчання в університеті та гуртожитку.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Головна</a></li>
+            <li class="nav-item"><a href="/services" class="nav-link px-2 text-muted">Сервіси</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link px-2 text-muted">Контакти</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 DanilkaXs, Inc</p>
+    </footer>
+</div>
+</body>
+</html>
